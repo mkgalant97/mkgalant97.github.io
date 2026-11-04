@@ -1,0 +1,198 @@
+[
+  {
+    "date": "2023-04-30",
+    "display_date": "30 April 2023",
+    "time": "4:00 pm",
+    "title": "2023 Concert Series at the Heritage",
+    "program": [
+      {
+        "composer": "Scarlatti",
+        "work": "Sonatas in A major, K. 208 and G major, K. 55"
+      },
+      {
+        "composer": "Haydn",
+        "work": "Sonata in C major, Hob. XVI:50"
+      },
+      {
+        "composer": "Medtner",
+        "work": "Sonata Tragica, op. 39 no. 5"
+      },
+      {
+        "composer": "Bach/Stradal",
+        "work": "Andante from Organ Sonata no. 4, BWV 528"
+      },
+      {
+        "composer": "Medtner",
+        "work": "Sonata in E minor, op. 25 no. 2 “Night Wind”"
+      }
+    ],
+    "with": [],
+    "venue": "The Heritage Museum and Cultural Center",
+    "city": "St. Joseph, MI, USA",
+    "link": {
+      "label": "Concert website",
+      "url": "https://theheritagemcc.org/events/concert-series/"
+    }
+  },
+  {
+    "date": "2023-03-18",
+    "display_date": "18 March 2023",
+    "time": "7:30 pm",
+    "title": "Concert for Winchelsea Arts Society",
+    "program": [
+      {
+        "composer": "Haydn",
+        "work": "Sonata in C major, Hob. XVI:50"
+      },
+      {
+        "composer": "Medtner",
+        "work": "Sonata Tragica, op. 39 no. 5"
+      },
+      {
+        "composer": "Scriabin",
+        "work": "Prelude and Nocturne for the Left Hand, op. 9; Poème Satanique, op. 36; Fantasie, op. 28"
+      },
+      {
+        "composer": "Bach/Stradal",
+        "work": "Adagio from Organ Sonata no. 4, BWV 528"
+      },
+      {
+        "composer": "Medtner",
+        "work": "Sonata in E minor, op. 25 no. 2 “Night Wind”"
+      }
+    ],
+    "with": [],
+    "venue": "Church of St. Thomas",
+    "city": "Winchelsea, UK",
+    "link": {
+      "label": "Concert website",
+      "url": "https://www.winchelsea-arts.org.uk/#five"
+    }
+  },
+  {
+    "date": "2023-02-25",
+    "display_date": "25 February 2023",
+    "time": "4:00 pm",
+    "title": "Master's Degree Recital",
+    "program": [
+      {
+        "composer": "Scriabin",
+        "work": "Prelude and Nocturne for the Left Hand, op. 9"
+      },
+      {
+        "composer": "Medtner",
+        "work": "Sonata Tragica, op. 39 no. 5"
+      },
+      {
+        "composer": "Scriabin",
+        "work": "Fantasie, op. 28"
+      },
+      {
+        "composer": "Medtner",
+        "work": "Sonata in E minor, op. 25 no. 2 “Night Wind”"
+      }
+    ],
+    "with": [],
+    "venue": "Dumke Recital Hall, David P. Gardner Hall",
+    "city": "Salt Lake City, UT, USA",
+    "link": null
+  },
+  {
+    "date": "2022-06-15",
+    "display_date": "15–22 June 2022",
+    "time": "",
+    "title": "Ke'Alohi International Piano Competition",
+    "program": [
+      {
+        "composer": "Scarlatti",
+        "work": "Sonata in A major, K. 208"
+      },
+      {
+        "composer": "Haydn",
+        "work": "Sonata in C major, Hob. XVI:50, Allegro"
+      },
+      {
+        "composer": "Scriabin",
+        "work": "Sonata no. 5, op. 53"
+      },
+      {
+        "composer": "Rachmaninoff",
+        "work": "“Lilacs,” op. 21 no. 5; Étude-Tableau in D major, op. 39 no. 9"
+      },
+      {
+        "composer": "Tchaikovsky",
+        "work": "Concerto no. 1 in B-flat minor, op. 23"
+      }
+    ],
+    "with": [
+      "Hawaii Symphony Orchestra"
+    ],
+    "venue": "Orvis Auditorium",
+    "city": "Honolulu, HI, USA",
+    "link": {
+      "label": "Competition website",
+      "url": "https://www.alohapianofestival.org/"
+    }
+  },
+  {
+    "date": "2022-05-15",
+    "display_date": "15 May 2022",
+    "time": "4:00 pm",
+    "title": "Gilmore Piano Festival 2022",
+    "program": [
+      {
+        "composer": "Poulenc",
+        "work": "Concerto for Two Pianos and Orchestra"
+      },
+      {
+        "composer": "Bach",
+        "work": "Concerto for Three Pianos in D minor, BWV 1063"
+      }
+    ],
+    "with": [
+      "Maxim Lando, piano",
+      "Wei Luo, piano",
+      "Kalamazoo Symphony Orchestra",
+      "Julian Kuerti, conductor"
+    ],
+    "venue": "Chenery Auditorium",
+    "city": "Kalamazoo, MI, USA",
+    "link": {
+      "label": "Concert website",
+      "url": "https://www.thegilmore.org/event/orchestral-concerto-festival-finale/"
+    }
+  },
+  {
+    "date": "2022-02-23",
+    "display_date": "23 February – 5 March 2022",
+    "time": "",
+    "title": "Hastings International Piano Concerto Competition",
+    "program": [
+      {
+        "composer": "Franck",
+        "work": "Prélude, Choral et Fugue"
+      },
+      {
+        "composer": "Scriabin",
+        "work": "Sonata no. 5, op. 53"
+      },
+      {
+        "composer": "Mozart",
+        "work": "Concerto no. 20 in D minor, K. 466"
+      },
+      {
+        "composer": "Rachmaninoff",
+        "work": "Concerto no. 3 in D minor, op. 30"
+      }
+    ],
+    "with": [
+      "Royal Philharmonic Orchestra"
+    ],
+    "venue": "Rye Creative Centre (Round I); White Rock Theatre (Rounds II–IV)",
+    "city": "Rye and Hastings, UK",
+    "link": {
+      "label": "Competition website",
+      "url": "https://www.hastingsinternationalpiano.org/"
+    }
+  }
+]

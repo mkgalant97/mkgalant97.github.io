@@ -1,0 +1,73 @@
+[
+  {
+    "slug": "devils-castle",
+    "title": "Devil's Castle",
+    "date": "September 17, 2020",
+    "cover": "devilscastle-jpeg.jpg",
+    "old_page": "devilscastle.html"
+  },
+  {
+    "slug": "half-dome",
+    "title": "Half Dome",
+    "date": "June 10, 2021",
+    "cover": "halfdome.jpg",
+    "old_page": "halfdome.html"
+  },
+  {
+    "slug": "lone-peak",
+    "title": "Lone Peak",
+    "date": "October 27, 2020",
+    "cover": "lonepeak-jpeg.jpg",
+    "old_page": "lone.html"
+  },
+  {
+    "slug": "mount-shasta",
+    "title": "Mount Shasta",
+    "date": "August 22-23, 2020",
+    "cover": "shasta.jpg",
+    "old_page": "shasta.html"
+  },
+  {
+    "slug": "mount-timpanogos",
+    "title": "Mount Timpanogos",
+    "date": "July 13, 2020",
+    "cover": "timp.jpg",
+    "old_page": "timpanogos.html"
+  },
+  {
+    "slug": "pfeifferhorn",
+    "title": "Pfeifferhorn",
+    "date": "October 22, 2020",
+    "cover": "pfeifferhorn.jpg",
+    "old_page": "pfeifferhorn.html"
+  },
+  {
+    "slug": "reynolds-mountain",
+    "title": "Reynolds Mountain",
+    "date": "July 7, 2021",
+    "cover": "reynolds.jpg",
+    "old_page": "reynolds.html"
+  },
+  {
+    "slug": "state-high-points",
+    "title": "State High Point Project",
+    "date": "",
+    "cover": "kings.jpg",
+    "old_page": "highpointproject.html",
+    "banner": "kingspano.jpg"
+  },
+  {
+    "slug": "white-baldy",
+    "title": "White Baldy",
+    "date": "October 6, 2020",
+    "cover": "whitebaldy.jpg",
+    "old_page": "whitebaldy.html"
+  },
+  {
+    "slug": "fall-in-utah",
+    "title": "Fall in Utah",
+    "date": "2021",
+    "cover": "1.jpg",
+    "old_page": "utahfall2021.html"
+  }
+]
