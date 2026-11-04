@@ -28,12 +28,14 @@ content = json.loads((DATA / "content.json").read_text("utf-8"))
 events = json.loads((DATA / "events.json").read_text("utf-8"))
 videos = json.loads((DATA / "videos.json").read_text("utf-8"))
 trips = json.loads((DATA / "trips.json").read_text("utf-8"))
+research = json.loads((DATA / "research.json").read_text("utf-8"))
 
 NAV = [
     ("home", "Home", "/"),
     ("bio", "Biography", "/biography/"),
     ("schedule", "Schedule", "/schedule/"),
     ("videos", "Videos", "/videos/"),
+    ("research", "Research", "/research/"),
     ("mountains", "Mountains", "/mountains/"),
     ("lessons", "Lessons", "/lessons/"),
     ("contact", "Contact", "/contact/"),
@@ -390,6 +392,45 @@ def build_mountains():
              body_class="trip")
 
 
+def research_project(p):
+    stats = "".join(f'<div class="stat"><span class="stat-value">{e(s["value"])}</span><span class="stat-label">{e(s["label"])}</span></div>' for s in p["stats"])
+    sections = "".join(
+        f'<div class="r-block"><h3>{e(s["heading"])}</h3>{"".join(f"<p>{e(x)}</p>" for x in s["body"])}</div>' for s in p["sections"])
+    findings = "".join(
+        f'<li><span class="num">{i:02d}</span><div><h4>{e(f["title"])}</h4><p>{e(f["text"])}</p></div></li>'
+        for i, f in enumerate(p["findings"], 1))
+    figures = "".join(
+        f'<figure class="r-fig"><a href="{f["src"]}" target="_blank" rel="noopener"><img src="{f["src"]}" alt="{e(f["caption"])}" loading="lazy"></a><figcaption><strong>Figure {i}.</strong> {e(f["caption"])}</figcaption></figure>'
+        for i, f in enumerate(p["figures"], 1))
+    links = "".join(f'<a href="{e(l["url"])}" target="_blank" rel="noopener">{e(l["label"])} ↗</a>' for l in p.get("links", []))
+    pdf = f'<a class="btn" href="{p["pdf"]}" target="_blank" rel="noopener">Read the full thesis (PDF)</a>' if p.get("pdf") else ""
+    return f"""<article class="project" id="{p['slug']}">
+  <header class="project-head">
+    <p class="kicker">{e(p['kind'])}</p>
+    <h2>{e(p['title'])}</h2>
+    <p class="project-meta">{e(p['meta'])}</p>
+    <p class="project-summary">{e(p['summary'])}</p>
+    {pdf}
+  </header>
+  <div class="stats">{stats}</div>
+  <div class="r-cols">{sections}</div>
+  <h3 class="r-title">Key findings</h3>
+  <ol class="findings">{findings}</ol>
+  <h3 class="r-title">Key figures</h3>
+  <div class="r-figs">{figures}</div>
+  <div class="r-next"><h3>What's next</h3><p>{e(p['next'])}</p>{f'<div class="r-links">{links}</div>' if links else ''}</div>
+</article>"""
+
+
+def build_research():
+    body = f"""{page_head("Research", "Atmospheric science", e(research["intro"]), "/assets/img/research/playa-banner.jpg")}
+<section class="section">
+  <div class="wrap">{"".join(research_project(p) for p in research["projects"])}</div>
+</section>"""
+    page("/research/", "Research", body, "research",
+         description="Misha Galant's atmospheric science research: measuring evaporation from playa and mineral pond surfaces near the Great Salt Lake.")
+
+
 def form_embed(form_id, height):
     url = f"https://docs.google.com/forms/d/e/{form_id}/viewform?embedded=true"
     return f"""<div class="form-card">
@@ -443,6 +484,7 @@ def build():
     build_bio()
     build_schedule()
     build_videos()
+    build_research()
     build_mountains()
     build_lessons()
     build_contact()

@@ -1,0 +1,55 @@
+{
+  "intro": "Alongside music, I work in atmospheric and environmental science. My research focuses on measuring how much water the land around the Great Salt Lake loses to the air, a key unknown in managing a lake that has been shrinking for decades.",
+  "projects": [
+    {
+      "slug": "great-salt-lake-evaporation",
+      "kind": "M.S. Thesis · Atmospheric Sciences",
+      "title": "Evaluating Evaporation from Land Surfaces near the Great Salt Lake",
+      "meta": "University of Utah · August 2025 · Advisor: Dr. John D. Horel · Committee: Dr. Sebastian Hoch, Dr. Kevin Perry",
+      "summary": "A pilot study for the Utah Division of Water Resources that tested two eddy covariance systems, the established Campbell Scientific EC150 and LI-COR's lower-cost LI-710, at an exposed playa in Farmington Bay and between mineral evaporation ponds at Compass Minerals. The aim: find out whether the cheaper sensor can be trusted to monitor evaporation across the Great Salt Lake basin.",
+      "pdf": "/assets/docs/Galant_2025_MS_Thesis.pdf",
+      "stats": [
+        {"value": "2", "label": "flux towers, one on the Farmington Bay playa and one between mineral ponds"},
+        {"value": "5½ mo", "label": "of cool-season data analyzed (16 Oct 2024 – 31 Mar 2025)"},
+        {"value": "~0.5 mm", "label": "of evaporation per day at both sites during the cool season (EC150)"},
+        {"value": "~20%", "label": "the LI-710's cost relative to the EC150 system"}
+      ],
+      "sections": [
+        {
+          "heading": "Why it matters",
+          "body": [
+            "Terminal saline lakes are drying worldwide, and the Great Salt Lake (the largest in North America) has been losing volume since the 1980s, largely due to consumptive water use. The newly exposed lakebed threatens wildlife, agriculture, and the air quality of the nearly three million people living along the Wasatch Front.",
+            "Evaporation is one of the biggest and least-measured terms in the lake's water budget. Within the lake's historic boundary, exposed playa now covers about 23% of the area, wetlands 26%, and diked mineral ponds about 6%. Each loses water at a different rate, so accurate, surface-specific measurements are essential for water policy."
+          ]
+        },
+        {
+          "heading": "What I did",
+          "body": [
+            "We installed two 3-meter flux towers in 2024: UUCMF, on a berm between two mineral ponds in Weber County, and UUPYF, on the Farmington Bay playa (reached by a 3 km bike ride or walk). Each tower carries both an EC150 (3-D wind, open-path gas analyzer) and an LI-710 (1-D vertical wind with a fast-response humidity sensor), powered by solar panels and streaming data in real time through the UUNET network.",
+            "My analysis combined each vendor's diagnostics with turbulence-based grades (stationarity, integral turbulence, and wind direction tests), then compared sensible heat (H), latent heat (LE), and evaporation between the two systems by site, time of day, and boundary-layer stability."
+          ]
+        }
+      ],
+      "findings": [
+        {"title": "The LI-710 underestimates evaporation", "text": "Sensible heat from the two systems agreed closely at both sites, but the LI-710 consistently reported lower latent heat flux and evaporation than the EC150, with the gap growing over the season. That points to the water-vapor pathway (the humidity sensor or air intake) rather than the wind measurement. LI-COR has since issued a firmware update to be evaluated next."},
+        {"title": "Surface type shapes the turbulence", "text": "The playa swings between dry, muddy, flooded, and frozen, producing more frequent very stable (9% vs. 4%) and very unstable (16% vs. 10%) conditions than the mineral ponds, whose water moderates temperature and keeps the boundary layer closer to neutral."},
+        {"title": "Strict quality control discards a lot", "text": "More than half of the EC150's 30-minute latent heat estimates failed the standard turbulence tests, especially at night and at the playa. Dropping them biases daily totals low and averages high, so future work should treat the filtering itself as a source of uncertainty."},
+        {"title": "First cool-season estimates", "text": "After quality control, the EC150 measured about 0.52 mm/day of evaporation from the playa and 0.53 mm/day near the mineral ponds from October to March. These are likely lower bounds that will be compared against warm-season data and earlier studies."}
+      ],
+      "figures": [
+        {"src": "/assets/img/research/fig01-site-map.jpg", "caption": "Study sites around the Great Salt Lake: flux towers UUCMF (mineral ponds) and UUPYF (playa), with nearby meteorological stations GSLM and UUPYA."},
+        {"src": "/assets/img/research/fig03-playa-site.jpg", "caption": "The playa site in Farmington Bay: (a) the 10 m UUPYA meteorological tower and (b) the UUPYF eddy covariance tower."},
+        {"src": "/assets/img/research/fig26.png", "caption": "Median latent heat flux by half-hour over the cool season. The LI-710 (orange) runs consistently below the EC150 (blue) at both (a) the mineral ponds and (b) the playa."},
+        {"src": "/assets/img/research/fig24.png", "caption": "Daily comparison over the full cool season: samples retained after quality control, median H and LE, and total evaporation at each site."},
+        {"src": "/assets/img/research/fig20.png", "caption": "Clear-sky case study, 24 March 2025: 30-minute H and LE from both sensors at (a) UUCMF and (b) UUPYF."},
+        {"src": "/assets/img/research/fig14.png", "caption": "Flux footprints (Kljun et al., 2004) showing the upwind areas that contribute to each tower's measurements during the cool season."}
+      ],
+      "next": "Measurements continued through October 2025 to cover a full annual cycle. Next steps include testing LI-COR's firmware fix during the warm season, quantifying how much evaporation is hidden in low-turbulence periods, comparing tower estimates with satellite and model products, and adding salinity measurements at the mineral ponds.",
+      "links": [
+        {"label": "Live data: UUCMF (mineral ponds)", "url": "https://mesowest.utah.edu/cgi-bin/droman/meso_base_dyn.cgi?stn=UUCMF"},
+        {"label": "Live data: UUPYF (playa)", "url": "https://mesowest.utah.edu/cgi-bin/droman/meso_base_dyn.cgi?stn=UUPYF"},
+        {"label": "UUNET network", "url": "https://horel.chpc.utah.edu/uunet.html"}
+      ]
+    }
+  ]
+}

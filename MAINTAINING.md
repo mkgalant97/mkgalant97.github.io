@@ -9,6 +9,7 @@ The easiest way to change the site is to open Claude Code in this folder and say
 | Bio, home intro, news, email, social links, PayPal, form IDs | `data/content.json` |
 | Concerts (upcoming and past) | `data/events.json` |
 | Videos (YouTube IDs) | `data/videos.json` |
+| Research projects (text, stats, findings, figures) | `data/research.json` |
 | Mountain trip list (title, date, cover photo) | `data/trips.json` |
 | Trip report text and photos | `data/trips/<slug>.html` |
 | Colors, fonts, layout | `assets/style.css` |
@@ -48,3 +49,7 @@ These are your existing Google Forms, embedded on the page. Responses arrive whe
 ## Old Columbia links
 
 Old addresses such as `about.html` and `devilscastle.html` redirect to the new pages. To send visitors from the Columbia site to here, replace `~/public_html/index.html` on cunix with a redirect to https://mkgalant97.github.io/.
+
+## Research
+
+Each project is one entry in the `projects` list in `data/research.json`. Add a new entry with the same fields to put another project on the page. Figures go in `assets/img/research/`, and PDFs go in `assets/docs/`.
