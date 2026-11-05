@@ -301,7 +301,8 @@ audio { width: 100%; filter: sepia(.25) saturate(.8); }
 .stat:first-child { border-left: 0; padding-left: 0; }
 .stat-value { display: block; font: 500 46px/1 var(--serif); color: var(--pine); margin-bottom: 10px; }
 .stat-label { display: block; font-size: 14.5px; line-height: 1.5; color: var(--ink-soft); }
-.r-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; }
+.r-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; margin-top: 48px; }
+.r-cols:has(> .r-block:only-child) { grid-template-columns: minmax(0, 820px); }
 .r-block h3, .r-next h3 { font-size: 30px; }
 .r-block p { margin: 0 0 1.1em; }
 .r-title { display: flex; align-items: center; gap: 22px; font-size: 34px; margin: 72px 0 32px; }

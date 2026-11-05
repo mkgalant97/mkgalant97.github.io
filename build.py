@@ -400,7 +400,7 @@ def research_project(p):
         f'<li><span class="num">{i:02d}</span><div><h4>{e(f["title"])}</h4><p>{e(f["text"])}</p></div></li>'
         for i, f in enumerate(p["findings"], 1))
     figures = "".join(
-        f'<figure class="r-fig"><a href="{f["src"]}" target="_blank" rel="noopener"><img src="{f["src"]}" alt="{e(f["caption"])}" loading="lazy"></a><figcaption><strong>Figure {i}.</strong> {e(f["caption"])}</figcaption></figure>'
+        f'<figure class="r-fig"><a href="{f["src"]}" target="_blank" rel="noopener"><img src="{f["src"]}" alt="{e(f["caption"])}" loading="lazy"></a><figcaption><strong>Figure {f.get("num", i)}.</strong> {e(f["caption"])}</figcaption></figure>'
         for i, f in enumerate(p["figures"], 1))
     links = "".join(f'<a href="{e(l["url"])}" target="_blank" rel="noopener">{e(l["label"])} ↗</a>' for l in p.get("links", []))
     pdf = f'<a class="btn" href="{p["pdf"]}" target="_blank" rel="noopener">Read the full thesis (PDF)</a>' if p.get("pdf") else ""
@@ -412,13 +412,13 @@ def research_project(p):
     <p class="project-summary">{e(p['summary'])}</p>
     {pdf}
   </header>
-  <div class="stats">{stats}</div>
+  {f'<div class="stats">{stats}</div>' if stats else ''}
   <div class="r-cols">{sections}</div>
   <h3 class="r-title">Key findings</h3>
   <ol class="findings">{findings}</ol>
   <h3 class="r-title">Key figures</h3>
   <div class="r-figs">{figures}</div>
-  <div class="r-next"><h3>What's next</h3><p>{e(p['next'])}</p>{f'<div class="r-links">{links}</div>' if links else ''}</div>
+  <div class="r-next"><h3>Future work</h3>{"".join(f"<p>{e(x)}</p>" for x in ([p['next']] if isinstance(p['next'], str) else p['next']))}{f'<div class="r-links">{links}</div>' if links else ''}</div>
 </article>"""
 
 

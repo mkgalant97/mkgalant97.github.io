@@ -53,3 +53,5 @@ Old addresses such as `about.html` and `devilscastle.html` redirect to the new p
 ## Research
 
 Each project is one entry in the `projects` list in `data/research.json`. Add a new entry with the same fields to put another project on the page. Figures go in `assets/img/research/`, and PDFs go in `assets/docs/`.
+
+> **Research text is verbatim.** Everything on the Research page that comes from the thesis (abstract, findings, figure captions, future work) is copied word-for-word from the PDF. Keep it that way. Figures keep their original thesis numbers through the `num` field.
